@@ -2,21 +2,45 @@
   grid-area: header;
   background-color: rgb(192, 232, 255);
 }
+
+.item1:hover {
+  background-color: rgb(172, 172, 172);
+}
+
 .item2 {
   grid-area: menu;
   background-color: rgb(150, 224, 230);
 }
+
+.item2:hover:hover {
+  background-color: rgb(172, 172, 172);
+}
+
 .item3 {
   grid-area: main;
   background-color: rgb(109, 202, 214);
 }
+
+.item3:hover:hover {
+  background-color: rgb(172, 172, 172);
+}
+
 .item4 {
   grid-area: right;
   background-color: rgb(94, 192, 221);
 }
+
+.item4:hover:hover {
+  background-color: rgb(172, 172, 172);
+}
+
 .item5 {
   grid-area: footer;
   background-color: rgba(77, 169, 175, 0.87);
+}
+
+.item5:hover:hover {
+  background-color: rgb(172, 172, 172);
 }
 
 .grid-container > div {
@@ -25,20 +49,27 @@
   font-size: 30px;
 }
 
-h1,
+h1 {
+  color: white;
+  font-size: 50px;
+text-align: center;
+}
+
 p {
   margin: 0 auto;
   text-align: center;
+font-size: 32px;
+color: white
 }
 @media (min-width: 400px) {
   .grid-container {
     display: grid;
     grid-template-areas:
-      "footer"
+      "header"
       "right"
       "menu"
       "main"
-      "header";
+      "footer";
     grid-gap: 10px;
     padding: 10px;
   }
@@ -64,10 +95,9 @@ p {
     grid-template-areas:
       "header header header header header"
       "right right menu menu menu"
-      "right right . main main"
+      "right right down down . main main"
       "right right footer footer footer";
 
     grid-gap: 10px;
     padding: 10px;
-  }
 }
